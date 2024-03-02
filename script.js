@@ -40,6 +40,6 @@ window.addEventListener("scroll", () => {
 
  
 const scroll = new LocomotiveScroll({
-    el: document.querySelector('[data-scroll-container]'),
+    el: document.querySelector('[ data-scroll-container]'),
     smooth: true
 });
