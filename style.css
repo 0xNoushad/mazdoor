@@ -11,6 +11,23 @@ html {
  font-family: 'Montserrat', sans-serif;
  scroll-behavior: smooth;
 }
+
+
+body{
+	--scroll-hue: 200;
+}
+
+.scrollbar {
+	width: 8px;
+	background-color: rgba(var(--scroll-hue), 50%, 50%, 0.7);  
+  }
+  
+ 
+  [data-scroll-section] {
+	background-color: hsl(var(--scroll-hue), 70%, 90%);
+	transition: background-color 0.5s ease;  
+  }
+
 .to-top {
 	background: rgb(193, 139, 77);
 	position: fixed;
