@@ -6,12 +6,12 @@
  font-family: 'Roboto Mono', monospace;
 }
 
+
 html {
  font-size: 10px;
  font-family: 'Montserrat', sans-serif;
  scroll-behavior: smooth;
 }
-
 
 body{
 	--scroll-hue: 200;
@@ -27,6 +27,7 @@ body{
 	background-color: hsl(var(--scroll-hue), 70%, 90%);
 	transition: background-color 0.5s ease;  
   }
+
 
 .to-top {
 	background: rgb(193, 139, 77);
@@ -115,7 +116,8 @@ p {
 .brand h1 span {
 	color: rgb(120, 160, 90);
 }
- 
+
+/* Header section */
 #header {
 	position: fixed;
 	z-index: 1000;
@@ -242,7 +244,7 @@ p {
 }
  
 #background-bg {
-	background-image: url(https://images.unsplash.com/photo-1504964670878-71b73cec0ce1?q=80&w=2064&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+	background-image: url( https://images.unsplash.com/photo-1504964670878-71b73cec0ce1?q=80&w=2064&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -303,7 +305,10 @@ p {
 #background-bg h1:nth-child(3) span {
 	animation-delay: 2.5s;
 }
- 
+
+/* End background-bg Section */
+
+/* Services Section */
 #services .services {
 	flex-direction: column;
 	text-align: center;
@@ -363,7 +368,9 @@ p {
 	color: white;
 	text-align: left;
 }
- 
+/* End Services Section */
+
+/* Help & Support Section */
 #help-support {
     background-color: #f0f0f0; /* Adjust background color as needed */
     padding: 80px 0;
@@ -387,7 +394,10 @@ p {
 	flex-direction: column;
 	background: linear-gradient(#2ecc71);
 }
- 
+/*  Help & Support Section  */
+
+
+/* Projects section */
 #projects .projects {
 	flex-direction: column;
 	max-width: 1200px;
@@ -458,7 +468,9 @@ p {
 #projects .project-item:hover .project-img img {
 	transform: scale(1.1);
 }
- 
+/* End Projects section */
+
+/* About Section */
 #about .about {
 	flex-direction: column-reverse;
 	text-align: center;
@@ -504,7 +516,9 @@ p {
 	border: 7px solid rgb(108, 155, 39);
 	z-index: -1;
 }
- 
+/* End About Section */
+
+/* contact Section */
 #contact .contact {
 	flex-direction: column;
 	max-width: 1200px;
@@ -547,7 +561,9 @@ p {
 	line-height: 2rem;
 	font-weight: 500;
 }
- 
+/*End contact Section */
+
+/* Footer */
 #footer {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
@@ -585,7 +601,9 @@ p {
 	color: white;
 	font-size: 1.3rem;
 }
- 
+/* End Footer */
+
+/* Keyframes */
 @keyframes hamburger_puls {
 	0% {
 		opacity: 1;
@@ -617,7 +635,9 @@ p {
 		font-weight: 500;
 	}
 }
- 
+/* End Keyframes */
+
+/* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
 	.cta {
 		font-size: 2.5rem;
@@ -631,12 +651,14 @@ p {
 	#backgroung-bg h1 {
 		font-size: 7rem;
 	}
- 
+	/* End backgroung-bg */
+
+	/* Services Section */
 	#services .service-bottom .service-item {
 		flex-basis: 45%;
 		margin: 2.5%;
 	}
- 
+	/* End Services Section */
 
 	/* Project */
 	#projects .project-item {
@@ -657,9 +679,9 @@ p {
 	#projects .all-projects .project-img {
 		height: 100%;
 	}
-	 
+	/* End Project */
 
- 
+	/* About */
 	#about .about {
 		flex-direction: row;
 	}
@@ -682,7 +704,9 @@ p {
 	#about .col-right h1 {
 		text-align: left;
 	}
- 
+	/* End About */
+
+	/* contact  */
 	#contact .contact {
 		flex-direction: column;
 		padding: 100px 0;
@@ -714,7 +738,11 @@ p {
 		text-align: left;
 		padding-left: 20px;
 	}
-	 
+	/* End contact  */
+}
+/* End Media Query For Tablet */
+
+/* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
 	/* header */
 	#header .hamburger {
@@ -736,7 +764,7 @@ p {
 	#header .nav-list ul a:after {
 		display: none;
 	}
- 
+	/* End header */
 
 	#services .service-bottom .service-item {
 		flex-basis: 22%;
@@ -771,4 +799,4 @@ p {
     background: #ee55cf;
     color: white;
   }
- 
+/* End  Media Query For Desktop */
